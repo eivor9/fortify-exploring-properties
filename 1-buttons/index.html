@@ -23,8 +23,42 @@
     <div class="medium-row">
         <button class="medium-1">Button</button>
         <button class="medium-2">Button <i class="fa-solid fa-arrow-right"></i></button>
-        <button class="medium-3">Button</button>
-        <button class="medium-4">Button</button>
+        <button class="custom-1" onclick="slack()"><i class="fa-solid fa-xmark"></i></button>
+        <button class="custom-2">Button</button>
     </div>
+    
 </body>
+<script>
+    var standard = true;
+    let slack = () => {
+        var custom = document.querySelector(".custom-1");
+        if (standard){
+            console.log("we're standard");
+            custom.style.backgroundColor = "rgb(255, 246, 255)";
+            custom.style.color = "rgba(102, 0, 102, 1)";
+            custom.firstChild.style.animation = "mymove .3s ease-in";
+            custom.firstChild.style.transform = "rotate(180deg)";
+            standard = false;
+        }
+        else{
+            console.log("we're twisted");
+            custom.style.backgroundColor = "rgba(102, 0, 102, 0.415)";
+            custom.style.color = "white";
+            custom.firstChild.style.animation = "mymoveReverse .3s ease-in";
+            custom.firstChild.style.transform = "rotate(45deg)";
+            standard = true;
+        }
+    }
+
+    var custom2 = document.querySelector(".custom-2");
+    custom2.addEventListener("mousedown", () => {
+        custom2.style.backgroundColor = "rgb(162, 162, 162)";
+        custom2.style.animation = "";
+    });
+    custom2.addEventListener("mouseup", () => {
+        custom2.style.animation = "slow-down 1s";
+        custom2.style.backgroundColor = "rgb(86, 86, 86)";
+
+    });
+</script>
 </html>

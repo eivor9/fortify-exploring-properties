@@ -130,17 +130,13 @@ button{
 }
 @keyframes mymove {
     0%      {transform: rotate(45deg);}
-    25%     {transform: rotate(90deg);}
-    50%     {transform: rotate(135deg);}
-    75%     {transform: rotate(220deg);}
+    75%     {transform: rotate(200deg);}
     100%    {transform: rotate(180deg);}
 }
 @keyframes mymoveReverse {
     0%      {transform: rotate(180deg);}
-    25%     {transform: rotate(135deg);}
-    50%     {transform: rotate(90deg);}
     75%     {transform: rotate(20deg);}
-    100%    {transform: rotate(45deg);}
+    100%     {transform: rotate(45deg);}
 }
 .custom-2{
     font-size: 20px;

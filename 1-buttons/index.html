@@ -36,7 +36,7 @@
             console.log("we're standard");
             custom.style.backgroundColor = "rgb(255, 246, 255)";
             custom.style.color = "rgba(102, 0, 102, 1)";
-            custom.firstChild.style.animation = "mymove .3s ease-in";
+            custom.firstChild.style.animation = "mymove .25s ease-in-out";
             custom.firstChild.style.transform = "rotate(180deg)";
             standard = false;
         }
@@ -44,7 +44,7 @@
             console.log("we're twisted");
             custom.style.backgroundColor = "rgba(102, 0, 102, 0.415)";
             custom.style.color = "white";
-            custom.firstChild.style.animation = "mymoveReverse .3s ease-in";
+            custom.firstChild.style.animation = "mymoveReverse .3s linear";
             custom.firstChild.style.transform = "rotate(45deg)";
             standard = true;
         }
